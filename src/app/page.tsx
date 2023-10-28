@@ -14,11 +14,6 @@ import {
   TwitterIcon,
 } from '@/components/SocialIcons'
 import logoPlanetaria from '@/images/logos/planetaria.svg'
-import image1 from '@/images/photos/image-1.jpg'
-import image2 from '@/images/photos/image-2.jpg'
-import image3 from '@/images/photos/image-3.jpg'
-import image4 from '@/images/photos/image-4.jpg'
-import image5 from '@/images/photos/image-5.jpg'
 import { type ArticleWithSlug, getAllArticles } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
 
@@ -222,33 +217,6 @@ function Resume() {
   )
 }
 
-function Photos() {
-  let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
-
-  return (
-    <div className="mt-16 sm:mt-20">
-      <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
-        {[image1, image2, image3, image4, image5].map((image, imageIndex) => (
-          <div
-            key={image.src}
-            className={clsx(
-              'relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl',
-              rotations[imageIndex % rotations.length],
-            )}
-          >
-            <Image
-              src={image}
-              alt=""
-              sizes="(min-width: 640px) 18rem, 11rem"
-              className="absolute inset-0 h-full w-full object-cover"
-            />
-          </div>
-        ))}
-      </div>
-    </div>
-  )
-}
-
 export default async function Home() {
   let articles = (await getAllArticles()).slice(0, 4)
 
@@ -383,7 +351,7 @@ export default async function Home() {
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
               Do you wish to get in touch?
               <br />
-              Don't hesitate.
+              Don&apos;t hesitate.
             </h2>
             <div className="mt-10 flex items-center gap-x-6 lg:mt-0 lg:flex-shrink-0">
               <a
@@ -413,10 +381,10 @@ export default async function Home() {
                       Administration from NYU Wagner in 2014, and a leadership
                       certificate from Harvard Chan School of Public Health in
                       2019. My medical journey began in Vancouver/Richmond,
-                      where I've been serving as a Family Physician since 1985,
-                      extending full-service and locum care. <br />
+                      where I&apos;ve been serving as a Family Physician since
+                      1985, extending full-service and locum care. <br />
                       <br />
-                      I've had the privilege of being an elected BCMA Board
+                      I&apos;ve had the privilege of being an elected BCMA Board
                       member for ten years, representing a broad spectrum of
                       physicians. My tenure included being a District 8 delegate
                       for Richmond/Delta for nine years and serving as the
@@ -427,7 +395,7 @@ export default async function Home() {
                       Services.
                       <br />
                       <br />
-                      I've led the Vancouver Medical Association as its
+                      I&apos;ve led the Vancouver Medical Association as its
                       President from 2000-02 and was an Executive Committee
                       member until 2010. My dedication to multicultural
                       inclusivity in healthcare was further displayed as the
@@ -472,8 +440,8 @@ export default async function Home() {
                       marked by relentless advocacy for transparency and
                       accountability within the board. I proposed the creation
                       of a Forms Committee during 2007-08 to mitigate
-                      administrative burdens, ensuring that members' rights to
-                      be fully informed were upheld, especially during the
+                      administrative burdens, ensuring that members&apos; rights
+                      to be fully informed were upheld, especially during the
                       ratification of negotiated contracts as seen in the GPSC
                       proposal of 2005. My efforts were rooted in maintaining
                       the fiduciary duty of the board to the members, promoting
