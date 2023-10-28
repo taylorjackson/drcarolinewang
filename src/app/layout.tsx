@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     default: 'Dr. Caroline Y. Wang',
   },
   description:
-    'I’m Spencer, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms.',
+    'I’m deeply committed to advancing our profession through seasoned leadership, advocacy, and robust academic training for the benefit of all BC doctors.',
 }
 
 export default function RootLayout({
