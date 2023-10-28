@@ -25,7 +25,6 @@
     "cheerio": "^1.0.0-rc.12",
     "clsx": "^1.2.1",
     "fast-glob": "^3.2.11",
-    "feed": "^4.2.2",
     "heroicons": "^2.0.18",
     "next": "13.4.16",
     "next-themes": "^0.2.1",
