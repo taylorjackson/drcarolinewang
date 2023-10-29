@@ -183,38 +183,6 @@ function Resume() {
       start: '2000',
       end: '2002',
     },
-    // {
-    //   company: 'Chinese Canadian Medical Society (BC)',
-    //   title: 'President',
-    //   logo: logoPlanetaria,
-    //   start: '1996',
-    //   end: '1997',
-    // },
-    // {
-    //   company: 'Association of Chinese Canadian Professionals (BC)',
-    //   title: 'President',
-    //   logo: logoPlanetaria,
-    //   start: '1999',
-    //   end: '2003',
-    // },
-    // {
-    //   company:
-    //     'Federation of Chinese American and Chinese Canadian Medical Societies',
-    //   title: 'President',
-    //   logo: logoPlanetaria,
-    //   start: '2002',
-    //   end: '2003',
-    // },
-    // {
-    //   company: 'Coalition for Better Health Care Society',
-    //   title: 'President',
-    //   logo: logoPlanetaria,
-    //   start: '2017',
-    //   end: {
-    //     label: 'Present',
-    //     dateTime: new Date().getFullYear().toString(),
-    //   },
-    // },
   ]
 
   return (
