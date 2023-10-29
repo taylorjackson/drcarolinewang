@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     default: 'Dr. Caroline Y. Wang',
   },
   description:
-    'I’m deeply committed to advancing our profession through seasoned leadership, advocacy, and robust academic training for the benefit of all BC doctors.',
+    'I am committed to advancing our profession through seasoned leadership, advocacy, and robust academic training for the benefit of all BC doctors.',
 }
 
 export default function RootLayout({

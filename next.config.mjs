@@ -16,6 +16,7 @@ const nextConfig = {
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx'],
   output: 'export',
   assetPrefix: './',
+  images: { unoptimized: true },
 }
 
 function remarkMDXLayout(source, metaName) {
