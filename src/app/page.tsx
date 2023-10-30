@@ -397,12 +397,14 @@ export default async function Home() {
                             <div className="flex-auto">
                               <div className="flex items-baseline justify-between gap-x-4">
                                 <p className="text-sm font-semibold leading-6 text-gray-900">
-                                  Equity across all payment models
+                                  Negotiations - better compensation for
+                                  Specialists and Family doctors
                                 </p>
                                 <p className="flex-none text-xs text-gray-600"></p>
                               </div>
                               <p className="mt-1 line-clamp-2 text-sm leading-6 text-gray-600">
-                                address gaps, no doctor left behind
+                                Equity across payment models, no doctor left
+                                behind
                               </p>
                             </div>
                           </li>
@@ -410,13 +412,13 @@ export default async function Home() {
                             <div className="flex-auto">
                               <div className="flex items-baseline justify-between gap-x-4">
                                 <p className="text-sm font-semibold leading-6 text-gray-900">
-                                  Locums
+                                  Revitalize independent practices
                                 </p>
                                 <p className="flex-none text-xs text-gray-600"></p>
                               </div>
                               <p className="mt-1 line-clamp-2 text-sm leading-6 text-gray-600">
-                                24/7/365 coverage as system not individual MD
-                                responsibility
+                                Overhead/facilities support, locums, 24/7/365
+                                coverage a system responsibility
                               </p>
                             </div>
                           </li>
@@ -424,12 +426,13 @@ export default async function Home() {
                             <div className="flex-auto">
                               <div className="flex items-baseline justify-between gap-x-4">
                                 <p className="text-sm font-semibold leading-6 text-gray-900">
-                                  Overhead costs
+                                  Benefits - support MDs for life
                                 </p>
                                 <p className="flex-none text-xs text-gray-600"></p>
                               </div>
                               <p className="mt-1 line-clamp-2 text-sm leading-6 text-gray-600">
-                                support viability for independent MD practices
+                                maternity/paternity, disability/sickness,
+                                Pharmacare Rx for MDs, Pensions
                               </p>
                             </div>
                           </li>
