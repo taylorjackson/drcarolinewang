@@ -135,53 +135,66 @@ function Role({ role }: { role: Role }) {
 function Resume() {
   let resume: Array<Role> = [
     {
-      company: 'BCMA/DoBC',
-      title: 'Board Delegate',
+      company: 'MD',
+      title: 'University of British Columbia',
       logo: logoPlanetaria,
-      start: '1998',
-      end: '2007',
+      start: '1980',
+      end: '1984',
     },
     {
-      company: 'BCMA Executive Committee',
-      title: 'Honorary Secretary Treasurer',
+      company: 'Master of Public Administration',
+      title: 'NYU Wagner',
+      logo: logoPlanetaria,
+      start: '2014',
+      end: '2014',
+    },
+    {
+      company: 'BC Family Physician',
+      title: 'Vancouver, Richmond',
+      logo: logoPlanetaria,
+      start: '1985',
+      end: {
+        label: 'Present',
+        dateTime: new Date().getFullYear().toString(),
+      },
+    },
+    {
+      company: 'Board Member (elected)',
+      title: 'BCMA / DoBC',
+      logo: logoPlanetaria,
+      start: '1998',
+      end: '2008',
+    },
+    {
+      company: 'Honorary Secretary Treasurer',
+      title: 'BCMA / DoBC',
       logo: logoPlanetaria,
       start: '2007',
       end: '2008',
     },
     {
-      company: 'BC Caucus',
-      title: 'CMA General Council',
-      logo: logoPlanetaria,
-      start: '2002',
-      end: '2007',
-    },
-    {
-      company: 'Area Medical Advisory Committee',
-      title: 'Chair',
-      logo: logoPlanetaria,
-      start: '2002',
-      end: '2005',
-    },
-    {
-      company: 'Vancouver Coastal Health Authority Medical Advisory Committee',
-      title: 'Member',
-      logo: logoPlanetaria,
-      start: '2002',
-      end: '2005',
-    },
-    {
-      company: 'Primary Health Care Coordinating Committee',
-      title: 'Member',
-      logo: logoPlanetaria,
-      start: '2002',
-      end: '2005',
-    },
-    {
-      company: 'Vancouver Medical Association',
-      title: 'President',
+      company: 'President',
+      title: 'Vancouver Medical Association',
       logo: logoPlanetaria,
       start: '2000',
       end: '2002',
+    },
+    {
+      company: 'Chair, Area Medical Advisory Committee',
+      title: 'Richmond Health Services',
+      logo: logoPlanetaria,
+      start: '2002',
+      end: '2005',
+    },
+    {
+      company: 'President & Founder',
+      title: 'Coalition for Better Health Care ',
+      logo: logoPlanetaria,
+      start: '2018',
+      end: {
+        label: 'Present',
+        dateTime: new Date().getFullYear().toString(),
+      },
     },
   ]
 
@@ -215,18 +228,30 @@ export default async function Home() {
           />
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-6 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
-              <h1 className="max-w-2xl text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:col-span-2 xl:col-auto">
-                Dr. Caroline Y. Wang
-                <div className="sm:text-4xl">MD, MPA</div>
+              <h1 className="max-w-2xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:col-span-2 xl:col-auto">
+                Dr. Caroline Y. Wang, MD, MPA
+                <div className="sm:text-2xl">
+                  Candidate for DoBC President-Elect
+                </div>
               </h1>
               <div className="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
                 <p className="text-lg leading-8 text-gray-600">
-                  I am committed to serve our profession and bring diverse,
-                  extensive knowledge as a well-known leader with decades of
-                  experience in organized medicine, grassroots advocacy, in
-                  senior administration, and with rigorous academic training in
-                  health policy, strategy and governance to benefit all the
-                  doctors in BC.
+                  At this critical time for our profession in a worsening health
+                  care crisis, we need the most experienced, trusted leaders in
+                  Doctors of BC working at the helm to serve the frontline
+                  physicians in the trenches delivering patient care that impact
+                  on the health of British Columbians.
+                  <br />
+                  <br />I am running for President-Elect in this election to
+                  give BC doctors a chance to vote for strong leadership
+                  addressing the serious system challenges we face as causes of
+                  burnout. We must lead with actions and the right cure – not
+                  bandaid solutions - that save lives and to stop the downward
+                  spiral in BC health care. I look forward to having an
+                  opportunity to serve our profession and patients, working
+                  together with BC doctors to heal the sick health care system
+                  with the right prescription in leading BC health system
+                  improvement and best care for all.
                 </p>
                 <div className="mt-10 flex items-center gap-x-6">
                   <a
@@ -247,217 +272,11 @@ export default async function Home() {
           <div className="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32" />
         </div>
       </Container>
-      <Container className="mt-16 md:mt-20 ">
-        <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 border-t border-gray-900/10 py-16 lg:max-w-none lg:grid-cols-2">
-          <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none lg:items-start lg:gap-y-10 ">
-            <div className="lg:mx-auto lg:w-full lg:max-w-7xl lg:px-8">
-              <div className="lg:pr-4">
-                <div className="lg:max-w-lg">
-                  <p className="text-base font-semibold leading-7 text-indigo-600">
-                    Vote for
-                  </p>
-                  <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                    A trusted physician advocate
-                  </h1>
-                  <p className="mt-6 text-xl leading-8 text-gray-700">
-                    At this critical time for our profession in a worsening
-                    health care crisis, we need the most experienced, trusted
-                    leaders in Doctors of BC working at the helm to serve all
-                    frontline physicians at the coalface in the trenches
-                    delivering patient care.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="lg:mx-auto lg:w-full lg:max-w-7xl lg:px-8 lg:py-8">
-              <div className="lg:pr-4">
-                <div className="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
-                  <p>
-                    Together, we can lead health care reform in BC with real
-                    solutions and action to achieve our common goals - healthy
-                    doctors, supported and valued to deliver best care for all.
-                  </p>
-                  <ul role="list" className="mt-8 space-y-8 text-gray-600">
-                    <li className="flex gap-x-3">
-                      <UserPlusIcon
-                        className="mt-1 h-5 w-5 flex-none text-indigo-600"
-                        aria-hidden="true"
-                      />
-                      <span>
-                        <strong className="font-semibold text-gray-900">
-                          Leadership.
-                        </strong>{' '}
-                        Prioritize fair compensation negotiations for all
-                        doctors, support physician autonomy in practice choices,
-                        and uphold transparency and accountability towards our
-                        members on outcomes.
-                      </span>
-                    </li>
-                    <li className="flex gap-x-3">
-                      <HeartIcon
-                        className="mt-1 h-5 w-5 flex-none text-indigo-600"
-                        aria-hidden="true"
-                      />
-                      <span>
-                        <strong className="font-semibold text-gray-900">
-                          Unity.
-                        </strong>{' '}
-                        Support MDs at every career stage, advocate for
-                        equitable payment models for all doctors, and foster
-                        collegiality to ensure no doctor is left behind.
-                      </span>
-                    </li>
-                    <li className="flex gap-x-3">
-                      <TrophyIcon
-                        className="mt-1 h-5 w-5 flex-none text-indigo-600"
-                        aria-hidden="true"
-                      />
-                      <span>
-                        <strong className="font-semibold text-gray-900">
-                          Quality.
-                        </strong>{' '}
-                        Push for evidence-based policy reforms for holistic
-                        care, tackle systemic burnout causes, and allocate
-                        resources to enhance access, reduce waste, and lower
-                        costs.
-                      </span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="space-y-10 lg:pl-16 xl:pl-24">
-            <Resume />
-          </div>
-        </div>
-        <div className="rounded-2xl border border-zinc-100 bg-white dark:border-zinc-700/40">
-          <div className="mx-auto max-w-7xl px-6 py-12 sm:py-24 lg:flex lg:items-center lg:justify-between lg:px-8">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Do you wish to get in touch?
-              <br />
-              Don&apos;t hesitate.
-            </h2>
-            <div className="mt-10 flex items-center gap-x-6 lg:mt-0 lg:flex-shrink-0">
-              <a
-                href="/contact"
-                className="text-lg font-semibold leading-6 text-gray-900"
-              >
-                Contact Me <span aria-hidden="true">→</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </Container>
-      <Container>
-        <section className="bg-white py-24 sm:py-32">
-          <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <div className="mx-auto grid max-w-2xl grid-cols-1 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-              <div className="flex flex-col pb-10 sm:pb-16 lg:pb-0 lg:pr-8 xl:pr-20">
-                <dl className="space-y-16 sm:gap-x-6 sm:gap-y-16 sm:space-y-0 lg:gap-x-10">
-                  <div>
-                    <dt className="text-lg font-semibold leading-7 text-gray-900">
-                      Who am I?
-                    </dt>
-                    <dd className="mt-2 text-base leading-7 text-gray-600">
-                      I am Dr. Caroline Y. Wang, a devoted advocate for the
-                      medical profession with a rich educational background
-                      including an MD from UBC in 1984, a Master of Public
-                      Administration from NYU Wagner in 2014, and a leadership
-                      certificate from Harvard Chan School of Public Health in
-                      2019. My medical journey began in Vancouver/Richmond,
-                      where I&apos;ve been serving as a Family Physician since
-                      1985, extending full-service and locum care. <br />
-                      <br />
-                      I&apos;ve had the privilege of being an elected BCMA Board
-                      member for ten years, representing a broad spectrum of
-                      physicians. My tenure included being a District 8 delegate
-                      for Richmond/Delta for nine years and serving as the
-                      Honorary Secretary-Treasurer during 2007-08. I was also
-                      part of the CMA General Council, BC Caucus from 2003-07,
-                      and held senior administration roles including the Chair
-                      of the Area Medical Advisory Committee at Richmond Health
-                      Services.
-                      <br />
-                      <br />
-                      I&apos;ve led the Vancouver Medical Association as its
-                      President from 2000-02 and was an Executive Committee
-                      member until 2010. My dedication to multicultural
-                      inclusivity in healthcare was further displayed as the
-                      President of the Chinese Canadian Medical Society during
-                      1996-97 and as a Board member till 1998, along with my
-                      service in the Federation of Chinese Medical Societies
-                      from 1996-03. <br />
-                      <br />
-                      I founded the Association of Chinese Canadian
-                      Professionals BC in 1999 and led it as President till
-                      2003, exhibiting my resolve to foster a diverse and
-                      inclusive professional community. In 2017, I founded the
-                      Coalition for Better Health Care, aimed at enhancing
-                      healthcare services. <br />
-                      <br />
-                      My extensive experience, complemented by a rich academic
-                      background, fuels my vision of a collaborative and
-                      equitable healthcare landscape in BC, striving for a
-                      positive change in our healthcare system and the practice
-                      of medicine.
-                    </dd>
-                  </div>
-                </dl>
-              </div>
-              <div className="flex flex-col pt-10 sm:pt-16 lg:pl-8 lg:pt-0 xl:pl-20">
-                <dl className="space-y-16 sm:gap-x-6 sm:gap-y-16 sm:space-y-0 lg:gap-x-10">
-                  <div>
-                    <dt className="text-lg font-semibold leading-7 text-gray-900">
-                      What have I done?
-                    </dt>
-                    <dd className="mt-2 text-base leading-7 text-gray-600">
-                      My journey has always been driven by a pledge to uphold
-                      integrity and exhibit courage to ensure the right actions
-                      are taken for the welfare of our medical community. In
-                      November 1998, I orchestrated a Public Forum alongside
-                      Richmond doctors, a decisive move that played a pivotal
-                      role in preserving vital surgical services at Richmond
-                      Hospital, averting a planned closure as outlined in the
-                      ROARS Report. <br />
-                      <br />
-                      My tenure as a BCMA board member from 2006 to 2008 was
-                      marked by relentless advocacy for transparency and
-                      accountability within the board. I proposed the creation
-                      of a Forms Committee during 2007-08 to mitigate
-                      administrative burdens, ensuring that members&apos; rights
-                      to be fully informed were upheld, especially during the
-                      ratification of negotiated contracts as seen in the GPSC
-                      proposal of 2005. My efforts were rooted in maintaining
-                      the fiduciary duty of the board to the members, promoting
-                      open communication, and ensuring the right to due process
-                      - all to ensure our colleagues are treated with fairness,
-                      justice, and dignity. <br />
-                      <br />
-                      In 2003, I spearheaded a significant proposal to Vancouver
-                      Coastal Health (VCH) for Primary Health Care Transition
-                      Fund (PHCTF) primary care funding. This initiative was
-                      aimed at bolstering a Family Practice Network for a
-                      Continuous Care Collaborative and an Urgent Care Center in
-                      Richmond, marking a stride towards enhanced primary care
-                      services and community health resources. My endeavors
-                      reflect a long-standing commitment to fostering a
-                      collaborative environment, reducing bureaucratic hurdles,
-                      and making impactful strides towards better healthcare
-                      systems.
-                    </dd>
-                  </div>
-                </dl>
-              </div>
-            </div>
-          </div>
-        </section>
-      </Container>
-      <Container>
-        <div className="bg-white pb-4 pt-4 sm:pb-8 sm:pt-8 xl:pb-12">
-          <div className="bg-white pb-20 sm:pb-24 xl:pb-0">
+      <Container className="mt-10">
+        <div className="bg-white sm:pb-4 sm:pt-4 xl:pb-12">
+          <div className="border-b border-t border-gray-900/10 bg-white xl:pb-0">
             <div className="mx-auto flex max-w-7xl flex-col items-center gap-x-8 gap-y-10 px-6 sm:gap-y-8 lg:px-8 xl:flex-row xl:items-stretch">
-              <div className="w-full max-w-2xl xl:max-w-none xl:flex-auto xl:px-16 xl:py-24">
+              <div className="w-full max-w-2xl py-24 xl:max-w-none xl:flex-auto xl:px-16">
                 <figure className="relative isolate pt-6 sm:pt-12">
                   <svg
                     viewBox="0 0 162 128"
@@ -473,19 +292,115 @@ export default async function Home() {
                   </svg>
                   <blockquote className="text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
                     <p>
-                      Dr. Caroline Y. Wang is truly the best person to work with
-                      and has unlimited energy to tackle all of the worlds
-                      problems.
+                      I envision a united medical profession leading health care
+                      transformation for healthy doctors, valued and supported
+                      to deliver high quality care, equity and sustainability.
                     </p>
                   </blockquote>
                   <figcaption className="mt-8 text-base">
                     <div className="font-semibold text-gray-900">
-                      Judith Black
+                      Dr. Caroline Y. Wang, MD, MPA
                     </div>
-                    <div className="mt-1 text-gray-400">CEO of Workcation</div>
+                    <div className="mt-1 text-gray-400">
+                      Candidate for DoBC President-Elect
+                    </div>
                   </figcaption>
                 </figure>
               </div>
+            </div>
+          </div>
+        </div>
+      </Container>
+      <Container>
+        <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 py-16 lg:max-w-none lg:grid-cols-2">
+          <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none lg:items-start lg:gap-y-10 ">
+            <div className="lg:mx-auto lg:w-full lg:max-w-7xl lg:px-8">
+              <div className="lg:pr-4">
+                <div className="lg:max-w-lg">
+                  <p className="text-base font-semibold leading-7 text-indigo-600">
+                    My priorities
+                  </p>
+                  <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-2xl">
+                    3-Year Strategy for Improvement
+                  </h1>
+                </div>
+              </div>
+            </div>
+            <div className="lg:mx-auto lg:w-full lg:max-w-7xl lg:px-8">
+              <div className="lg:pr-4">
+                <div className="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
+                  <ul role="list" className="mt-8 space-y-8 text-gray-600">
+                    <li className="flex gap-x-3">
+                      <UserPlusIcon
+                        className="mt-1 h-5 w-5 flex-none text-indigo-600"
+                        aria-hidden="true"
+                      />
+                      <span>
+                        <strong className="font-semibold text-gray-900">
+                          Leadership.
+                        </strong>{' '}
+                        Upholding good governance, strategic action, and
+                        professional independence for impactful results.
+                        Engaging members transparently and accountably as the
+                        rightful owners with a voice.
+                      </span>
+                    </li>
+                    <li className="flex gap-x-3">
+                      <HeartIcon
+                        className="mt-1 h-5 w-5 flex-none text-indigo-600"
+                        aria-hidden="true"
+                      />
+                      <span>
+                        <strong className="font-semibold text-gray-900">
+                          Unity.
+                        </strong>{' '}
+                        Family Physicians and Specialists spearheading
+                        collaborative solutions for better compensation,
+                        equitable payment models, and systemic coverage.
+                        Supporting doctors at all career stages with benefits,
+                        practice support, and a balance between professional and
+                        personal life.
+                      </span>
+                    </li>
+                    <li className="flex gap-x-3">
+                      <TrophyIcon
+                        className="mt-1 h-5 w-5 flex-none text-indigo-600"
+                        aria-hidden="true"
+                      />
+                      <span>
+                        <strong className="font-semibold text-gray-900">
+                          Quality.
+                        </strong>{' '}
+                        Addressing physician burnout at its roots, backing local
+                        MD-led innovative solutions, and promoting
+                        evidence-based policies for a holistic, patient-centered
+                        care. Ensuring team-based care is physician-led with
+                        clear role delineations based on training and
+                        competencies.
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="space-y-10 lg:pl-16 xl:pl-24">
+            <Resume />
+          </div>
+        </div>
+        <div className="rounded-2xl border-2 border-zinc-100 bg-white dark:border-zinc-700/40">
+          <div className="mx-auto max-w-7xl px-6 py-12 sm:py-24 lg:flex lg:flex-col lg:items-center lg:justify-between lg:px-8">
+            <h2 className="pb-10 text-center text-3xl font-bold tracking-tight text-gray-900 sm:text-3xl md:px-16 lg:px-32">
+              Join me to build a legacy of hope, restore joy and pride to the
+              practice of medicine.
+            </h2>
+            <div className="mt-10 flex items-center justify-center gap-x-6 lg:mt-0 lg:flex-shrink-0">
+              <a
+                href="/contact"
+                className="text-lg font-semibold leading-6 text-gray-900"
+              >
+                Contact Me <span aria-hidden="true">→</span>
+              </a>
             </div>
           </div>
         </div>
