@@ -229,7 +229,7 @@ export default async function Home() {
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-6 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
               <h1 className="max-w-2xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:col-span-2 xl:col-auto">
-                Dr. Caroline Y. Wang, MD, MPA
+                Dr. Caroline Y. Wang
                 <div className="sm:text-2xl">
                   Candidate for DoBC President-Elect
                 </div>
@@ -436,38 +436,6 @@ export default async function Home() {
                               </p>
                             </div>
                           </li>
-                          <li className="flex gap-x-4 py-5">
-                            <div className="flex-auto">
-                              <div className="flex items-baseline justify-between gap-x-4">
-                                <p className="text-sm font-semibold leading-6 text-gray-900">
-                                  MD Benefits
-                                </p>
-                                <p className="flex-none text-xs text-gray-600"></p>
-                              </div>
-                              <p className="mt-1 line-clamp-2 text-sm leading-6 text-gray-600">
-                                Disability/sickness, Prescription coverage for
-                                doctors/their families
-                              </p>
-                            </div>
-                          </li>
-                          <li className="flex gap-x-4 py-5">
-                            <div className="flex-auto">
-                              <div className="flex items-baseline justify-between gap-x-4">
-                                <p className="text-sm font-semibold leading-6 text-gray-900">
-                                  Support MDs for life
-                                </p>
-                                <p className="flex-none text-xs text-gray-600"></p>
-                              </div>
-                              <p className="mt-1 text-sm leading-6 text-gray-600">
-                                better maternity/paternity benefits and locums,
-                                practice support Mid-career – reduce burdens,
-                                flexibility, work-life balance for
-                                sustainability Late-career – transition to
-                                retirement, locums/new associates, mentor
-                                younger MDs.
-                              </p>
-                            </div>
-                          </li>
                         </ul>
                       </span>
                     </li>
@@ -495,6 +463,7 @@ export default async function Home() {
                               </p>
                             </div>
                           </li>
+
                           <li className="flex gap-x-4 py-5">
                             <div className="flex-auto">
                               <div className="flex items-baseline justify-between gap-x-4">
@@ -512,15 +481,15 @@ export default async function Home() {
                             <div className="flex-auto">
                               <div className="flex items-baseline justify-between gap-x-4">
                                 <p className="text-sm font-semibold leading-6 text-gray-900">
-                                  Evidence-based policies
+                                  Evidence-based policy and practice
                                 </p>
                                 <p className="flex-none text-xs text-gray-600"></p>
                               </div>
-                              <p className="mt-1 text-sm leading-6 text-gray-600">
-                                whole system improvement and integrated
-                                patient-centered care Team-based Care must be
-                                physician-led, roles & responsibilities based on
-                                training/competencies.
+                              <p className="mt-1 line-clamp-2 text-sm leading-6 text-gray-600">
+                                whole system reforms, integrated
+                                patient-centered, Team-based care physician led,
+                                roles and responsibilities based on
+                                training/competencies
                               </p>
                             </div>
                           </li>
@@ -543,9 +512,9 @@ export default async function Home() {
                 </h2>
                 <ol className="mt-6 space-y-4">
                   I am committed to serve our profession and bring extensive
-                  knowledge as a well-known leader with decades of experience in
-                  organized medicine, grassroots advocacy, senior
-                  administration, and my rigorous academic training in health
+                  knowledge as a well-known leader with 3 decades of experience
+                  in organized medicine, grassroots advocacy, senior
+                  administration, and rigorous academic training in health
                   policy, strategy and governance to benefit all the doctors in
                   BC.{' '}
                 </ol>
@@ -557,8 +526,9 @@ export default async function Home() {
         <div className="rounded-2xl border-2 border-zinc-100 bg-white dark:border-zinc-700/40">
           <div className="mx-auto max-w-7xl px-6 py-12 sm:py-24 lg:flex lg:flex-col lg:items-center lg:justify-between lg:px-8">
             <h2 className="pb-10 text-center text-3xl font-bold tracking-tight text-gray-900 sm:text-3xl md:px-16 lg:px-32">
-              Join me to build a legacy of hope, empower physicians and lead
-              health care reform.
+              Join me to build a legacy of hope, empower all physicians as
+              patient advocates, and lead change for excellence in BC health
+              care.
             </h2>
             <div className="mt-10 flex items-center justify-center gap-x-6 lg:mt-0 lg:flex-shrink-0">
               <a
