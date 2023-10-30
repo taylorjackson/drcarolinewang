@@ -2,10 +2,6 @@
 
 import { useState } from 'react'
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
-}
-
 export default function Example() {
   const [agreed, setAgreed] = useState(false)
 
