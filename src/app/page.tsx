@@ -339,10 +339,48 @@ export default async function Home() {
                         <strong className="font-semibold text-gray-900">
                           Leadership.
                         </strong>{' '}
-                        Upholding good governance, strategic action, and
-                        professional independence for impactful results.
-                        Engaging members transparently and accountably as the
-                        rightful owners with a voice.
+                        <ul role="list" className="divide-y divide-gray-100">
+                          <li className="flex gap-x-4 py-5">
+                            <div className="flex-auto">
+                              <div className="flex items-baseline justify-between gap-x-4">
+                                <p className="text-sm font-semibold leading-6 text-gray-900">
+                                  Doing the right thing
+                                </p>
+                                <p className="flex-none text-xs text-gray-600"></p>
+                              </div>
+                              <p className="mt-1 line-clamp-2 text-sm leading-6 text-gray-600">
+                                Good governance, strategy and action for results
+                              </p>
+                            </div>
+                          </li>
+                          <li className="flex gap-x-4 py-5">
+                            <div className="flex-auto">
+                              <div className="flex items-baseline justify-between gap-x-4">
+                                <p className="text-sm font-semibold leading-6 text-gray-900">
+                                  Physician Autonomy
+                                </p>
+                                <p className="flex-none text-xs text-gray-600"></p>
+                              </div>
+                              <p className="mt-1 line-clamp-2 text-sm leading-6 text-gray-600">
+                                Autonomy professional independence, flexibility
+                                and choice of practice models
+                              </p>
+                            </div>
+                          </li>
+                          <li className="flex gap-x-4 py-5">
+                            <div className="flex-auto">
+                              <div className="flex items-baseline justify-between gap-x-4">
+                                <p className="text-sm font-semibold leading-6 text-gray-900">
+                                  Transparency and Accountability
+                                </p>
+                                <p className="flex-none text-xs text-gray-600"></p>
+                              </div>
+                              <p className="mt-1 line-clamp-2 text-sm leading-6 text-gray-600">
+                                Engagement of members as the owners with rights
+                              </p>
+                            </div>
+                          </li>
+                        </ul>
                       </span>
                     </li>
                     <li className="flex gap-x-3">
@@ -354,12 +392,80 @@ export default async function Home() {
                         <strong className="font-semibold text-gray-900">
                           Unity.
                         </strong>{' '}
-                        Family Physicians and Specialists spearheading
-                        collaborative solutions for better compensation,
-                        equitable payment models, and systemic coverage.
-                        Supporting doctors at all career stages with benefits,
-                        practice support, and a balance between professional and
-                        personal life.
+                        <ul role="list" className="divide-y divide-gray-100">
+                          <li className="flex gap-x-4 py-5">
+                            <div className="flex-auto">
+                              <div className="flex items-baseline justify-between gap-x-4">
+                                <p className="text-sm font-semibold leading-6 text-gray-900">
+                                  Equity across all payment models
+                                </p>
+                                <p className="flex-none text-xs text-gray-600"></p>
+                              </div>
+                              <p className="mt-1 line-clamp-2 text-sm leading-6 text-gray-600">
+                                address gaps, no doctor left behind
+                              </p>
+                            </div>
+                          </li>
+                          <li className="flex gap-x-4 py-5">
+                            <div className="flex-auto">
+                              <div className="flex items-baseline justify-between gap-x-4">
+                                <p className="text-sm font-semibold leading-6 text-gray-900">
+                                  Locums
+                                </p>
+                                <p className="flex-none text-xs text-gray-600"></p>
+                              </div>
+                              <p className="mt-1 line-clamp-2 text-sm leading-6 text-gray-600">
+                                24/7/365 coverage as system not individual MD
+                                responsibility
+                              </p>
+                            </div>
+                          </li>
+                          <li className="flex gap-x-4 py-5">
+                            <div className="flex-auto">
+                              <div className="flex items-baseline justify-between gap-x-4">
+                                <p className="text-sm font-semibold leading-6 text-gray-900">
+                                  Overhead costs
+                                </p>
+                                <p className="flex-none text-xs text-gray-600"></p>
+                              </div>
+                              <p className="mt-1 line-clamp-2 text-sm leading-6 text-gray-600">
+                                support viability for independent MD practices
+                              </p>
+                            </div>
+                          </li>
+                          <li className="flex gap-x-4 py-5">
+                            <div className="flex-auto">
+                              <div className="flex items-baseline justify-between gap-x-4">
+                                <p className="text-sm font-semibold leading-6 text-gray-900">
+                                  MD Benefits
+                                </p>
+                                <p className="flex-none text-xs text-gray-600"></p>
+                              </div>
+                              <p className="mt-1 line-clamp-2 text-sm leading-6 text-gray-600">
+                                Disability/sickness, Prescription coverage for
+                                doctors/their families
+                              </p>
+                            </div>
+                          </li>
+                          <li className="flex gap-x-4 py-5">
+                            <div className="flex-auto">
+                              <div className="flex items-baseline justify-between gap-x-4">
+                                <p className="text-sm font-semibold leading-6 text-gray-900">
+                                  Support MDs for life
+                                </p>
+                                <p className="flex-none text-xs text-gray-600"></p>
+                              </div>
+                              <p className="mt-1 text-sm leading-6 text-gray-600">
+                                better maternity/paternity benefits and locums,
+                                practice support Mid-career – reduce burdens,
+                                flexibility, work-life balance for
+                                sustainability Late-career – transition to
+                                retirement, locums/new associates, mentor
+                                younger MDs.
+                              </p>
+                            </div>
+                          </li>
+                        </ul>
                       </span>
                     </li>
                     <li className="flex gap-x-3">
@@ -371,12 +477,51 @@ export default async function Home() {
                         <strong className="font-semibold text-gray-900">
                           Quality.
                         </strong>{' '}
-                        Addressing physician burnout at its roots, backing local
-                        MD-led innovative solutions, and promoting
-                        evidence-based policies for a holistic, patient-centered
-                        care. Ensuring team-based care is physician-led with
-                        clear role delineations based on training and
-                        competencies.
+                        <ul role="list" className="divide-y divide-gray-100">
+                          <li className="flex gap-x-4 py-5">
+                            <div className="flex-auto">
+                              <div className="flex items-baseline justify-between gap-x-4">
+                                <p className="text-sm font-semibold leading-6 text-gray-900">
+                                  Rx MD burnout
+                                </p>
+                                <p className="flex-none text-xs text-gray-600"></p>
+                              </div>
+                              <p className="mt-1 line-clamp-2 text-sm leading-6 text-gray-600">
+                                address root causes for healing and
+                                sustainability
+                              </p>
+                            </div>
+                          </li>
+                          <li className="flex gap-x-4 py-5">
+                            <div className="flex-auto">
+                              <div className="flex items-baseline justify-between gap-x-4">
+                                <p className="text-sm font-semibold leading-6 text-gray-900">
+                                  Support local MD-led innovative solutions
+                                </p>
+                                <p className="flex-none text-xs text-gray-600"></p>
+                              </div>
+                              <p className="mt-1 line-clamp-2 text-sm leading-6 text-gray-600">
+                                with resources and implementation
+                              </p>
+                            </div>
+                          </li>
+                          <li className="flex gap-x-4 py-5">
+                            <div className="flex-auto">
+                              <div className="flex items-baseline justify-between gap-x-4">
+                                <p className="text-sm font-semibold leading-6 text-gray-900">
+                                  Evidence-based policies
+                                </p>
+                                <p className="flex-none text-xs text-gray-600"></p>
+                              </div>
+                              <p className="mt-1 text-sm leading-6 text-gray-600">
+                                whole system improvement and integrated
+                                patient-centered care Team-based Care must be
+                                physician-led, roles & responsibilities based on
+                                training/competencies.
+                              </p>
+                            </div>
+                          </li>
+                        </ul>
                       </span>
                     </li>
                   </ul>
@@ -385,14 +530,32 @@ export default async function Home() {
             </div>
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
+            <span>
+              <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
+                <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+                  <BriefcaseIcon className="h-6 w-6 flex-none" />
+                  <span className="ml-3">
+                    Strong Advocate and Agent of Change
+                  </span>
+                </h2>
+                <ol className="mt-6 space-y-4">
+                  I am committed to serve our profession and bring extensive
+                  knowledge as a well-known leader with decades of experience in
+                  organized medicine, grassroots advocacy, senior
+                  administration, and my rigorous academic training in health
+                  policy, strategy and governance to benefit all the doctors in
+                  BC.{' '}
+                </ol>
+              </div>
+            </span>
             <Resume />
           </div>
         </div>
         <div className="rounded-2xl border-2 border-zinc-100 bg-white dark:border-zinc-700/40">
           <div className="mx-auto max-w-7xl px-6 py-12 sm:py-24 lg:flex lg:flex-col lg:items-center lg:justify-between lg:px-8">
             <h2 className="pb-10 text-center text-3xl font-bold tracking-tight text-gray-900 sm:text-3xl md:px-16 lg:px-32">
-              Join me to build a legacy of hope, restore joy and pride to the
-              practice of medicine.
+              Join me to build a legacy of hope, empower physicians and lead
+              health care reform.
             </h2>
             <div className="mt-10 flex items-center justify-center gap-x-6 lg:mt-0 lg:flex-shrink-0">
               <a
