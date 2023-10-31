@@ -8,6 +8,10 @@ const nextConfig = {
   output: 'export',
   assetPrefix: './',
   images: { unoptimized: true },
+  webpack: (config) => {
+    config.resolve.alias.canvas = false
+    return config
+  },
 }
 
 const withMDX = nextMDX({
