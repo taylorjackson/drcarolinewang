@@ -487,9 +487,7 @@ export default async function Home() {
                               </div>
                               <p className="mt-1 line-clamp-2 text-sm leading-6 text-gray-600">
                                 whole system reforms, integrated
-                                patient-centered, Team-based care physician led,
-                                roles and responsibilities based on
-                                training/competencies
+                                patient-centered, Team-based care physician led
                               </p>
                             </div>
                           </li>
