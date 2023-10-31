@@ -1,19 +1,9 @@
 import Image, { type ImageProps } from 'next/image'
 import Link from 'next/link'
-import clsx from 'clsx'
 import { UserPlusIcon, HeartIcon, TrophyIcon } from '@heroicons/react/20/solid'
-
-import { Button } from '@/components/Button'
-import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
-import {
-  GitHubIcon,
-  InstagramIcon,
-  LinkedInIcon,
-  TwitterIcon,
-} from '@/components/SocialIcons'
+import { Button } from '@/components/Button'
 import logoPlanetaria from '@/images/logos/planetaria.svg'
-import { formatDate } from '@/lib/formatDate'
 import headshot from '@/images/headshot.jpg'
 
 function MailIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
@@ -346,7 +336,7 @@ export default async function Home() {
                     My priorities
                   </p>
                   <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-2xl">
-                    3-Year Strategy for Improvement
+                    Strategy for Improvement
                   </h1>
                 </div>
               </div>
@@ -382,7 +372,7 @@ export default async function Home() {
                             <div className="flex-auto">
                               <div className="flex items-baseline justify-between gap-x-4">
                                 <p className="text-sm font-semibold leading-6 text-gray-900">
-                                  Physician Autonomy: renown (2nd) autonomy
+                                  Physician Autonomy
                                 </p>
                                 <p className="flex-none text-xs text-gray-600"></p>
                               </div>
