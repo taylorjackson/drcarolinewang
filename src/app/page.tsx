@@ -61,6 +61,25 @@ function BriefcaseIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   )
 }
 
+function UserIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      className="h-6 w-6"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"
+      />
+    </svg>
+  )
+}
+
 function ArrowDownIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
     <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" {...props}>
@@ -124,7 +143,7 @@ function Role({ role }: { role: Role }) {
           aria-label={`${startLabel} until ${endLabel}`}
         >
           <time dateTime={startDate}>{startLabel}</time>{' '}
-          <span aria-hidden="true">—</span>{' '}
+          {endDate ? <span aria-hidden="true">—</span> : <span></span>}{' '}
           <time dateTime={endDate}>{endLabel}</time>
         </dd>
       </dl>
@@ -138,15 +157,15 @@ function Resume() {
       company: 'MD',
       title: 'University of British Columbia',
       logo: logoPlanetaria,
-      start: '1980',
-      end: '1984',
+      start: '1984',
+      end: '',
     },
     {
       company: 'Master of Public Administration',
       title: 'NYU Wagner',
       logo: logoPlanetaria,
       start: '2014',
-      end: '2014',
+      end: '',
     },
     {
       company: 'BC Family Physician',
@@ -247,7 +266,7 @@ export default async function Home() {
                   addressing the serious system challenges we face as causes of
                   burnout. We must lead with actions and the right cure – not
                   bandaid solutions - that save lives and to stop the downward
-                  spiral in BC health care. I look forward to having an
+                  spiral in BC health care. I hope to have the privilege and
                   opportunity to serve our profession and patients, working
                   together with BC doctors to heal the sick health care system
                   with the right prescription in leading BC health system
@@ -357,13 +376,13 @@ export default async function Home() {
                             <div className="flex-auto">
                               <div className="flex items-baseline justify-between gap-x-4">
                                 <p className="text-sm font-semibold leading-6 text-gray-900">
-                                  Physician Autonomy
+                                  Physician Autonomy: renown (2nd) autonomy
                                 </p>
                                 <p className="flex-none text-xs text-gray-600"></p>
                               </div>
                               <p className="mt-1 line-clamp-2 text-sm leading-6 text-gray-600">
                                 Autonomy professional independence, flexibility
-                                and choice of practice models
+                                and meaningful choices of practice models
                               </p>
                             </div>
                           </li>
@@ -431,7 +450,7 @@ export default async function Home() {
                                 <p className="flex-none text-xs text-gray-600"></p>
                               </div>
                               <p className="mt-1 line-clamp-2 text-sm leading-6 text-gray-600">
-                                maternity/paternity, disability/sickness,
+                                better maternity/paternity, disability/sickness,
                                 Pharmacare Rx for MDs, Pensions
                               </p>
                             </div>
@@ -486,8 +505,8 @@ export default async function Home() {
                                 <p className="flex-none text-xs text-gray-600"></p>
                               </div>
                               <p className="mt-1 line-clamp-2 text-sm leading-6 text-gray-600">
-                                whole system reforms, integrated
-                                patient-centered, Team-based care physician led
+                                Whole system reform, team-based care
+                                physician-led care by FPs and specialists
                               </p>
                             </div>
                           </li>
@@ -503,7 +522,7 @@ export default async function Home() {
             <span>
               <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
                 <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-                  <BriefcaseIcon className="h-6 w-6 flex-none" />
+                  <UserIcon className="h-6 w-6 flex-none" />
                   <span className="ml-3">
                     Strong Advocate and Agent of Change
                   </span>
@@ -525,7 +544,7 @@ export default async function Home() {
           <div className="mx-auto max-w-7xl px-6 py-12 sm:py-24 lg:flex lg:flex-col lg:items-center lg:justify-between lg:px-8">
             <h2 className="pb-10 text-center text-3xl font-bold tracking-tight text-gray-900 sm:text-3xl md:px-16 lg:px-32">
               Join me to build a legacy of hope, empower all physicians as
-              patient advocates, and lead change for excellence in BC health
+              patient advocates “to” lead change for excellence in BC health
               care.
             </h2>
             <div className="mt-10 flex items-center justify-center gap-x-6 lg:mt-0 lg:flex-shrink-0">
