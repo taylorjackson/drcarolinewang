@@ -14,6 +14,7 @@ import {
 } from '@/components/SocialIcons'
 import logoPlanetaria from '@/images/logos/planetaria.svg'
 import { formatDate } from '@/lib/formatDate'
+import headshot from '@/images/headshot.jpg'
 
 function MailIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -275,16 +276,16 @@ export default async function Home() {
                 </p>
                 <div className="mt-10 flex items-center gap-x-6">
                   <a
-                    href="#"
+                    href="#priorities"
                     className="text-sm font-semibold leading-6 text-gray-900"
                   >
                     Learn more <span aria-hidden="true">→</span>
                   </a>
                 </div>
               </div>
-              <img
-                src="https://images.pixieset.com/88527856/f8f5d96d98d3f1c83bfd37c18b421456-xxlarge.jpg"
-                alt=""
+              <Image
+                src={headshot}
+                alt="Dr. Caroline Y. Wang"
                 className="mt-10 w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2"
               />
             </div>
@@ -331,7 +332,7 @@ export default async function Home() {
           </div>
         </div>
       </Container>
-      <Container>
+      <Container id="priorities">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 py-16 lg:max-w-none lg:grid-cols-2">
           <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none lg:items-start lg:gap-y-10 ">
             <div className="lg:mx-auto lg:w-full lg:max-w-7xl lg:px-8">
@@ -382,8 +383,8 @@ export default async function Home() {
                                 <p className="flex-none text-xs text-gray-600"></p>
                               </div>
                               <p className="mt-1 line-clamp-2 text-sm leading-6 text-gray-600">
-                                Autonomy professional independence, flexibility
-                                and meaningful choices of practice models
+                                Professional independence, flexibility, and
+                                meaningful choice of payment and practice models
                               </p>
                             </div>
                           </li>
@@ -446,13 +447,13 @@ export default async function Home() {
                             <div className="flex-auto">
                               <div className="flex items-baseline justify-between gap-x-4">
                                 <p className="text-sm font-semibold leading-6 text-gray-900">
-                                  Benefits - support MDs for life
+                                  MD Benefits for life
                                 </p>
                                 <p className="flex-none text-xs text-gray-600"></p>
                               </div>
                               <p className="mt-1 line-clamp-2 text-sm leading-6 text-gray-600">
-                                better maternity/paternity, disability/sickness,
-                                Pharmacare Rx for MDs, Pensions
+                                Better maternity/paternity, disability/sickness
+                                support, Pharmacare Rx drugs for doctors
                               </p>
                             </div>
                           </li>
@@ -506,8 +507,8 @@ export default async function Home() {
                                 <p className="flex-none text-xs text-gray-600"></p>
                               </div>
                               <p className="mt-1 line-clamp-2 text-sm leading-6 text-gray-600">
-                                Whole system reform, team-based care
-                                physician-led care by FPs and specialists
+                                Whole system reform, team-based care led by FPs
+                                and Specialists
                               </p>
                             </div>
                           </li>
@@ -545,7 +546,7 @@ export default async function Home() {
           <div className="mx-auto max-w-7xl px-6 py-12 sm:py-24 lg:flex lg:flex-col lg:items-center lg:justify-between lg:px-8">
             <h2 className="pb-10 text-center text-3xl font-bold tracking-tight text-gray-900 sm:text-3xl md:px-16 lg:px-32">
               Join me to build a legacy of hope, empower all physicians as
-              patient advocates “to” lead change for excellence in BC health
+              patient advocates, and lead change for excellence in BC health
               care.
             </h2>
             <div className="mt-10 flex items-center justify-center gap-x-6 lg:mt-0 lg:flex-shrink-0">
