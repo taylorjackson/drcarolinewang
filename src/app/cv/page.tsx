@@ -94,7 +94,7 @@ export default function CV() {
                 onLoadSuccess={onDocumentLoadSuccess}
                 options={options}
               >
-                {Array.from({ length: numPages }, (_, index) => (
+                {Array.from({ length: 3 }, (_, index) => (
                   <Page
                     key={`page_${index + 1}`}
                     pageNumber={index + 1}
