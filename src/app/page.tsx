@@ -292,7 +292,7 @@ export default async function Home() {
                   </svg>
                   <blockquote className="text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
                     <p>
-                      I envision a united medical profession leading health care
+                      My vision: a united medical profession leading health care
                       transformation for healthy doctors, valued and supported
                       to deliver high quality care, equity and sustainability.
                     </p>
