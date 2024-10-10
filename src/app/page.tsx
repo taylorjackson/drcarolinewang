@@ -144,7 +144,8 @@ function Role({ role }: { role: Role }) {
 }
 
 function Resume() {
-  let resume: Array<Role> = [
+  let resume = [
+    // Education
     {
       company: 'MD',
       title: 'University of British Columbia',
@@ -154,58 +155,77 @@ function Resume() {
     },
     {
       company: 'Master of Public Administration',
-      title: 'NYU Wagner',
+      title: 'New York University',
       logo: logoPlanetaria,
       start: '2014',
       end: '',
     },
+    // Medical Practice
     {
-      company: 'BC Family Physician',
-      title: 'Vancouver, Richmond',
+      company: 'BC Family Physician (full service)',
+      title:
+        'Vancouver, Richmond; Active staff Richmond Hospital for over 20 years',
       logo: logoPlanetaria,
-      start: '1985',
-      end: {
-        label: 'Present',
-        dateTime: new Date().getFullYear().toString(),
-      },
+      start: '',
+      end: '',
+    },
+    // Medical Leadership (Elected)
+    {
+      company: 'President',
+      title: 'Vancouver Medical Association',
+      logo: logoPlanetaria,
+      start: '',
+      end: '',
     },
     {
-      company: 'Board Member (elected)',
-      title: 'BCMA / DoBC',
+      company: 'Board District Delegate; Executive Committee',
+      title: 'British Columbia Medical Association',
       logo: logoPlanetaria,
-      start: '1998',
-      end: '2008',
+      start: '',
+      end: '',
     },
     {
       company: 'Honorary Secretary Treasurer',
       title: 'BCMA / DoBC',
       logo: logoPlanetaria,
-      start: '2007',
-      end: '2008',
-    },
-    {
-      company: 'President',
-      title: 'Vancouver Medical Association',
-      logo: logoPlanetaria,
-      start: '2000',
-      end: '2002',
+      start: '',
+      end: '',
     },
     {
       company: 'Chair, Area Medical Advisory Committee',
-      title: 'Richmond Health Services',
+      title: 'Richmond Health Services; Member VCH HAMAC',
       logo: logoPlanetaria,
-      start: '2002',
-      end: '2005',
+      start: '',
+      end: '',
+    },
+    // Community Leadership
+    {
+      company: 'Founding President',
+      title: 'Association of Chinese Canadian Professionals BC',
+      logo: logoPlanetaria,
+      start: '',
+      end: '',
     },
     {
-      company: 'President & Founder',
-      title: 'Coalition for Better Health Care ',
+      company: 'President',
+      title: 'Chinese-Canadian Medical Society (CCMS) BC',
       logo: logoPlanetaria,
-      start: '2018',
-      end: {
-        label: 'Present',
-        dateTime: new Date().getFullYear().toString(),
-      },
+      start: '',
+      end: '',
+    },
+    {
+      company: 'Founder',
+      title: 'Coalition for Better Health Care',
+      logo: logoPlanetaria,
+      start: '',
+      end: '',
+    },
+    {
+      company: 'Co-Chair, Health Fair',
+      title: 'SUCCESS, CCMS',
+      logo: logoPlanetaria,
+      start: '',
+      end: '',
     },
   ]
 
@@ -251,22 +271,20 @@ export default async function Home() {
               </h1>
               <div className="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
                 <p className="text-lg leading-8 text-gray-600">
-                  At this critical time for our profession in a worsening health
-                  care crisis, we need the most experienced, trusted leaders in
-                  Doctors of BC working at the helm to serve the frontline
-                  physicians in the trenches delivering patient care that impact
-                  on the health of British Columbians.
+                  I am running for MLA for Vancouver-Quilchena as an Independent
+                  candidate to bring strong representation and to give voters a
+                  centrist option in this crucial election.
                   <br />
-                  <br />I am running for President-Elect in this election to
-                  give BC doctors a chance to vote for strong leadership
-                  addressing the serious system challenges we face as causes of
-                  burnout. We must lead with actions and the right cure – not
-                  bandaid solutions - that save lives and to stop the downward
-                  spiral in BC health care. I hope to have the privilege and
-                  opportunity to serve our profession and patients, working
-                  together with BC doctors to heal the sick health care system
-                  with the right prescription in leading BC health system
-                  improvement and best care for all.
+                  <br />
+                  As a BC doctor of 38 years in family practice with extensive
+                  public leadership experience, I want to use my knowledge to
+                  benefit the constituents and address serious challenges,
+                  especially the health care crisis affecting our communities.
+                  With my academic training from New York University studying
+                  international health systems, policy and management, I wish to
+                  help the Government to improve the public system to achieve
+                  high impact saving lives and better health outcomes for
+                  British Columbians.
                 </p>
                 <div className="mt-10 flex items-center gap-x-6">
                   <a
@@ -307,9 +325,10 @@ export default async function Home() {
                   </svg>
                   <blockquote className="text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
                     <p>
-                      My vision: a united medical profession leading health care
-                      transformation for healthy doctors, valued and supported
-                      to deliver high quality care, equity and sustainability.
+                      My vision is to make BC healthy again by honoring our
+                      values as a caring society based on fiscal and social
+                      responsibility that help people and families to live happy
+                      and productive lives.
                     </p>
                   </blockquote>
                   <figcaption className="mt-8 text-base">
@@ -332,12 +351,9 @@ export default async function Home() {
             <div className="lg:mx-auto lg:w-full lg:max-w-7xl lg:px-8">
               <div className="lg:pr-4">
                 <div className="lg:max-w-lg">
-                  <p className="text-base font-semibold leading-7 text-indigo-600">
-                    My priorities
+                  <p className="text-xl font-bold leading-7 text-indigo-600">
+                    My Goals and Priorities
                   </p>
-                  <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-2xl">
-                    Strategy for Improvement
-                  </h1>
                 </div>
               </div>
             </div>
@@ -345,6 +361,7 @@ export default async function Home() {
               <div className="lg:pr-4">
                 <div className="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
                   <ul role="list" className="mt-8 space-y-8 text-gray-600">
+                    {/* First Main Point */}
                     <li className="flex gap-x-3">
                       <UserPlusIcon
                         className="mt-1 h-5 w-5 flex-none text-indigo-600"
@@ -352,19 +369,22 @@ export default async function Home() {
                       />
                       <span>
                         <strong className="font-semibold text-gray-900">
-                          Leadership.
-                        </strong>{' '}
+                          Fix health care
+                        </strong>
+                        , ensure high quality care for all, especially seniors
+                        and vulnerable people; promote health-in-all policies.
                         <ul role="list" className="divide-y divide-gray-100">
+                          {/* Sub-points */}
                           <li className="flex gap-x-4 py-5">
                             <div className="flex-auto">
                               <div className="flex items-baseline justify-between gap-x-4">
                                 <p className="text-sm font-semibold leading-6 text-gray-900">
-                                  Doing the right thing
+                                  Quality
                                 </p>
-                                <p className="flex-none text-xs text-gray-600"></p>
                               </div>
-                              <p className="mt-1 line-clamp-2 text-sm leading-6 text-gray-600">
-                                Good governance, strategy and action for results
+                              <p className="mt-1 text-sm leading-6 text-gray-600">
+                                Safe, effective, efficient, timely access,
+                                equity
                               </p>
                             </div>
                           </li>
@@ -372,13 +392,12 @@ export default async function Home() {
                             <div className="flex-auto">
                               <div className="flex items-baseline justify-between gap-x-4">
                                 <p className="text-sm font-semibold leading-6 text-gray-900">
-                                  Physician Autonomy
+                                  Family doctors providing holistic care
                                 </p>
-                                <p className="flex-none text-xs text-gray-600"></p>
                               </div>
-                              <p className="mt-1 line-clamp-2 text-sm leading-6 text-gray-600">
-                                Professional independence, flexibility, and
-                                meaningful choice of payment and practice models
+                              <p className="mt-1 text-sm leading-6 text-gray-600">
+                                First contact, continuous, comprehensive,
+                                coordinated care
                               </p>
                             </div>
                           </li>
@@ -386,18 +405,45 @@ export default async function Home() {
                             <div className="flex-auto">
                               <div className="flex items-baseline justify-between gap-x-4">
                                 <p className="text-sm font-semibold leading-6 text-gray-900">
-                                  Transparency and Accountability
+                                  Specialty and diagnostic services
                                 </p>
-                                <p className="flex-none text-xs text-gray-600"></p>
                               </div>
-                              <p className="mt-1 line-clamp-2 text-sm leading-6 text-gray-600">
-                                Engagement of members as the owners with rights
+                              <p className="mt-1 text-sm leading-6 text-gray-600">
+                                Mental health and community services
+                              </p>
+                            </div>
+                          </li>
+                          <li className="flex gap-x-4 py-5">
+                            <div className="flex-auto">
+                              <div className="flex items-baseline justify-between gap-x-4">
+                                <p className="text-sm font-semibold leading-6 text-gray-900">
+                                  Public system guarantee
+                                </p>
+                              </div>
+                              <p className="mt-1 text-sm leading-6 text-gray-600">
+                                Urgent 24/7 care, ambulances, Emergency and
+                                hospital care
+                              </p>
+                            </div>
+                          </li>
+                          <li className="flex gap-x-4 py-5">
+                            <div className="flex-auto">
+                              <p className="text-sm font-semibold leading-6 text-gray-900">
+                                Homecare, long-term care, rehabilitation
+                              </p>
+                            </div>
+                          </li>
+                          <li className="flex gap-x-4 py-5">
+                            <div className="flex-auto">
+                              <p className="text-sm font-semibold leading-6 text-gray-900">
+                                Respect for patients and all health providers
                               </p>
                             </div>
                           </li>
                         </ul>
                       </span>
                     </li>
+                    {/* Second Main Point */}
                     <li className="flex gap-x-3">
                       <HeartIcon
                         className="mt-1 h-5 w-5 flex-none text-indigo-600"
@@ -405,55 +451,11 @@ export default async function Home() {
                       />
                       <span>
                         <strong className="font-semibold text-gray-900">
-                          Unity.
-                        </strong>{' '}
-                        <ul role="list" className="divide-y divide-gray-100">
-                          <li className="flex gap-x-4 py-5">
-                            <div className="flex-auto">
-                              <div className="flex items-baseline justify-between gap-x-4">
-                                <p className="text-sm font-semibold leading-6 text-gray-900">
-                                  Negotiations - better compensation for
-                                  Specialists and Family doctors
-                                </p>
-                                <p className="flex-none text-xs text-gray-600"></p>
-                              </div>
-                              <p className="mt-1 line-clamp-2 text-sm leading-6 text-gray-600">
-                                Equity across payment models, no doctor left
-                                behind
-                              </p>
-                            </div>
-                          </li>
-                          <li className="flex gap-x-4 py-5">
-                            <div className="flex-auto">
-                              <div className="flex items-baseline justify-between gap-x-4">
-                                <p className="text-sm font-semibold leading-6 text-gray-900">
-                                  Revitalize independent practices
-                                </p>
-                                <p className="flex-none text-xs text-gray-600"></p>
-                              </div>
-                              <p className="mt-1 line-clamp-2 text-sm leading-6 text-gray-600">
-                                Overhead/facilities support, locums, 24/7/365
-                                coverage a system responsibility
-                              </p>
-                            </div>
-                          </li>
-                          <li className="flex gap-x-4 py-5">
-                            <div className="flex-auto">
-                              <div className="flex items-baseline justify-between gap-x-4">
-                                <p className="text-sm font-semibold leading-6 text-gray-900">
-                                  MD Benefits for life
-                                </p>
-                                <p className="flex-none text-xs text-gray-600"></p>
-                              </div>
-                              <p className="mt-1 line-clamp-2 text-sm leading-6 text-gray-600">
-                                Better maternity/paternity, disability/sickness
-                                support, Pharmacare Rx drugs for doctors
-                              </p>
-                            </div>
-                          </li>
-                        </ul>
+                          Cut administrative costs and waste
+                        </strong>
                       </span>
                     </li>
+                    {/* Third Main Point */}
                     <li className="flex gap-x-3">
                       <TrophyIcon
                         className="mt-1 h-5 w-5 flex-none text-indigo-600"
@@ -461,52 +463,10 @@ export default async function Home() {
                       />
                       <span>
                         <strong className="font-semibold text-gray-900">
-                          Quality.
-                        </strong>{' '}
-                        <ul role="list" className="divide-y divide-gray-100">
-                          <li className="flex gap-x-4 py-5">
-                            <div className="flex-auto">
-                              <div className="flex items-baseline justify-between gap-x-4">
-                                <p className="text-sm font-semibold leading-6 text-gray-900">
-                                  Rx MD burnout
-                                </p>
-                                <p className="flex-none text-xs text-gray-600"></p>
-                              </div>
-                              <p className="mt-1 line-clamp-2 text-sm leading-6 text-gray-600">
-                                address root causes for healing and
-                                sustainability
-                              </p>
-                            </div>
-                          </li>
-
-                          <li className="flex gap-x-4 py-5">
-                            <div className="flex-auto">
-                              <div className="flex items-baseline justify-between gap-x-4">
-                                <p className="text-sm font-semibold leading-6 text-gray-900">
-                                  Support local MD-led innovative solutions
-                                </p>
-                                <p className="flex-none text-xs text-gray-600"></p>
-                              </div>
-                              <p className="mt-1 line-clamp-2 text-sm leading-6 text-gray-600">
-                                with resources and implementation
-                              </p>
-                            </div>
-                          </li>
-                          <li className="flex gap-x-4 py-5">
-                            <div className="flex-auto">
-                              <div className="flex items-baseline justify-between gap-x-4">
-                                <p className="text-sm font-semibold leading-6 text-gray-900">
-                                  Evidence-based policy and practice
-                                </p>
-                                <p className="flex-none text-xs text-gray-600"></p>
-                              </div>
-                              <p className="mt-1 line-clamp-2 text-sm leading-6 text-gray-600">
-                                Whole system reform, team-based care led by FPs
-                                and Specialists
-                              </p>
-                            </div>
-                          </li>
-                        </ul>
+                          Culture of excellence
+                        </strong>
+                        , with evidence-based policies, transparency, and
+                        accountability for results.
                       </span>
                     </li>
                   </ul>
@@ -514,6 +474,7 @@ export default async function Home() {
               </div>
             </div>
           </div>
+          {/* The right side of the component remains the same */}
           <div className="space-y-10 lg:pl-16 xl:pl-24">
             <span>
               <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
@@ -528,8 +489,8 @@ export default async function Home() {
                   knowledge as a well-known leader with 3 decades of experience
                   in organized medicine, grassroots advocacy, senior
                   administration, and rigorous academic training in health
-                  policy, strategy and governance to benefit all the doctors in
-                  BC.{' '}
+                  policy, strategy, and governance to benefit all the doctors in
+                  BC.
                 </ol>
               </div>
             </span>
@@ -538,10 +499,12 @@ export default async function Home() {
         </div>
         <div className="rounded-2xl border-2 border-zinc-100 bg-white dark:border-zinc-700/40">
           <div className="mx-auto max-w-7xl px-6 py-12 sm:py-24 lg:flex lg:flex-col lg:items-center lg:justify-between lg:px-8">
-            <h2 className="pb-10 text-center text-3xl font-bold tracking-tight text-gray-900 sm:text-3xl md:px-16 lg:px-32">
-              Join me to build a legacy of hope, empower all physicians as
-              patient advocates, and lead change for excellence in BC health
-              care.
+            <h2 className="pb-10 text-center text-3xl font-bold tracking-tight text-gray-900 sm:text-3xl md:px-12 lg:px-20">
+              I hope to earn your vote for the opportunity to work for good
+              government in BC, using my lifetime of knowledge as a professional
+              and trusted leader to serve the constituents of
+              Vancouver-Quilchena. Together we can build a strong legacy for our
+              future.
             </h2>
             <div className="mt-10 flex items-center justify-center gap-x-6 lg:mt-0 lg:flex-shrink-0">
               <a
