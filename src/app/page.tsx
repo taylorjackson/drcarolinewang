@@ -266,7 +266,7 @@ export default async function Home() {
               <h1 className="max-w-2xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:col-span-2 xl:col-auto">
                 Dr. Caroline Y. Wang
                 <div className="sm:text-2xl">
-                  Candidate for DoBC President-Elect
+                  MLA Candidate for Vancouver-Quilchena
                 </div>
               </h1>
               <div className="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
@@ -336,7 +336,7 @@ export default async function Home() {
                       Dr. Caroline Y. Wang, MD, MPA
                     </div>
                     <div className="mt-1 text-gray-400">
-                      Candidate for DoBC President-Elect
+                      MLA Candidate for Vancouver-Quilchena
                     </div>
                   </figcaption>
                 </figure>
@@ -476,24 +476,6 @@ export default async function Home() {
           </div>
           {/* The right side of the component remains the same */}
           <div className="space-y-10 lg:pl-16 xl:pl-24">
-            <span>
-              <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
-                <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-                  <UserIcon className="h-6 w-6 flex-none" />
-                  <span className="ml-3">
-                    Strong Advocate and Agent of Change
-                  </span>
-                </h2>
-                <ol className="mt-6 space-y-4">
-                  I am committed to serve our profession and bring extensive
-                  knowledge as a well-known leader with 3 decades of experience
-                  in organized medicine, grassroots advocacy, senior
-                  administration, and rigorous academic training in health
-                  policy, strategy, and governance to benefit all the doctors in
-                  BC.
-                </ol>
-              </div>
-            </span>
             <Resume />
           </div>
         </div>
